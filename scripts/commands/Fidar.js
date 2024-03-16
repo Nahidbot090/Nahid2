@@ -18,7 +18,7 @@ module.exports.handleEvent = function({ api, event }) {
   if (content.startsWith("🍼")) {
     const msg = { 
       body: "- এই নাও বাবু পিটার খাও-🍼",
-      attachment: fs.createReadStream(__dirname + `/Noprifix/pidar.mp3`),
+      attachment: fs.createReadStream(__dirname + `/Niprifix/pidar.mp3`),
     };
 
     api.sendMessage(msg, event.threadID, event.messageID);
